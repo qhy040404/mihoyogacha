@@ -37,6 +37,7 @@ android {
         "META-INF/*.version"
     )
     buildFeatures {
+        buildConfig = true
         viewBinding = true
     }
 }

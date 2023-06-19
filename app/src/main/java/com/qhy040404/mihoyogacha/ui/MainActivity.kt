@@ -5,6 +5,7 @@ import android.webkit.CookieManager
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AlertDialog
+import com.qhy040404.mihoyogacha.BuildConfig
 import com.qhy040404.mihoyogacha.R
 import com.qhy040404.mihoyogacha.base.BaseActivity
 import com.qhy040404.mihoyogacha.constant.Game
@@ -108,6 +109,12 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
                     gachaUrl.setText("请先登录")
                     return@setOnClickListener
                 }
+
+                if (BuildConfig.DEBUG.not()) {
+                    gachaUrl.setText("暂不可用")
+                    return@setOnClickListener
+                }
+
                 val keys = gameRoles.filter { it.type == Game.STAR_RAIL }
                 if (keys.isEmpty()) {
                     gachaUrl.setText("无星铁角色")
