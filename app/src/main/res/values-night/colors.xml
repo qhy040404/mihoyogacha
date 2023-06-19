@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#90CAF9</color>
+    <color name="colorPrimaryMd3">#90CAF9</color>
+    <color name="textNormal">#FFFFFFFF</color>
+    <color name="textSecondary">#80BEBEBE</color>
+
+    <color name="highlight_component">@color/material_blue_800</color>
+</resources>

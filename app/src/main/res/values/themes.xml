@@ -1,0 +1,20 @@
+<resources>
+
+    <style name="Platform.Theme.Gacha" parent="Theme.Material3.Light.Gacha">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+        <item name="android:enforceStatusBarContrast">false</item>
+    </style>
+
+    <style name="Base.AppTheme" parent="Platform.Theme.Gacha">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme" parent="Base.AppTheme" />
+
+    <style name="AppTheme" parent="Theme" />
+</resources>
